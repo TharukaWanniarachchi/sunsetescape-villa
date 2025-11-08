@@ -148,8 +148,8 @@ img {
    HERO SECTION
    ================== */
 .hero {
-    background: linear-gradient(135deg, rgba(0, 51, 102, 0.7), rgba(255, 107, 53, 0.6)), 
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23FDB813;stop-opacity:1" /><stop offset="50%" style="stop-color:%23FF6B35;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FF8A80;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad1)" width="1200" height="600"/><circle fill="%23FDB813" opacity="0.3" cx="200" cy="100" r="150"/><circle fill="%23FF8A80" opacity="0.2" cx="900" cy="400" r="200"/></svg>');
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.85), rgba(255, 107, 53, 0.75)), 
+                url('../images/IMG_0292.JPG');
     background-size: cover;
     background-position: center;
     background-attachment: scroll; /* Changed from fixed to scroll for mobile compatibility */
@@ -162,9 +162,28 @@ img {
     text-align: center;
     color: white;
     margin-top: 60px;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 51, 102, 0.6), rgba(255, 107, 53, 0.4));
+    z-index: 1;
 }
 
 .hero__content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero__content {
+    position: relative;
+    z-index: 2;
     animation: fadeInUp 1s ease;
 }
 
