@@ -1,0 +1,26 @@
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor Files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Backup Files
+*.old
+*.bak
+
+# Node modules (if added later)
+node_modules/
+
+# Log Files
+*.log
+npm-debug.log*

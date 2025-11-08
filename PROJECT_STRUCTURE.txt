@@ -1,0 +1,166 @@
+SUNSET ESCAPE VILLA - PROJECT STRUCTURE
+=========================================
+
+sunset-escape-html/
+│
+├── 📄 index.html                    # Main HTML file (Clean semantic structure)
+│   ├── Navigation Section
+│   ├── Hero Section (with villa photo background)
+│   ├── About Section (with villa exterior photo)
+│   ├── Features Section
+│   ├── Amenities Section
+│   ├── Gallery Section (12 villa photos)
+│   ├── Packages Section
+│   ├── Location Section
+│   ├── Contact Section
+│   └── Footer Section
+│
+├── 🎨 css/
+│   └── styles.css                   # Organized CSS with BEM naming
+│       ├── CSS Variables (Colors, spacing)
+│       ├── Base Styles
+│       ├── Navigation Styles
+│       ├── Hero Section Styles
+│       ├── About Section Styles
+│       ├── Features Grid
+│       ├── Amenities List
+│       ├── Gallery Grid
+│       ├── Pricing Cards
+│       ├── Contact Form
+│       ├── Footer Styles
+│       ├── Animations
+│       └── Responsive Design
+│
+├── 💻 js/
+│   └── app.js                       # OOP JavaScript Implementation
+│       ├── Component (Base Class)
+│       │   ├── show()
+│       │   ├── hide()
+│       │   ├── addClass()
+│       │   ├── removeClass()
+│       │   └── toggleClass()
+│       │
+│       ├── Navigation (extends Component)
+│       │   ├── setupMobileMenu()
+│       │   ├── setupSmoothScroll()
+│       │   └── setupActiveState()
+│       │
+│       ├── BackToTopButton (extends Component)
+│       │   ├── setupScrollListener()
+│       │   └── setupClickListener()
+│       │
+│       ├── ContactForm (extends Component)
+│       │   ├── handleSubmit()
+│       │   ├── validateForm()
+│       │   ├── isValidEmail()
+│       │   └── submitForm()
+│       │
+│       ├── Gallery (extends Component)
+│       │   ├── setupGalleryItems()
+│       │   └── showGalleryItem()
+│       │
+│       ├── ScrollAnimation
+│       │   └── setupObserver()
+│       │
+│       └── SunsetEscapeApp (Main Controller)
+│           └── init()
+│
+├── 🖼️ images/                       # Villa Photo Gallery
+│   ├── IMG_0290.JPG                 # Interior view
+│   ├── IMG_0291.JPG                 # Living room
+│   ├── IMG_0292.JPG                 # Swimming pool
+│   ├── IMG_0293.JPG                 # Villa exterior
+│   ├── IMG_0294.JPG                 # Bedroom
+│   ├── IMG_0295.JPG                 # Hero background (main villa view)
+│   ├── IMG_0296.JPG                 # About section image
+│   ├── IMG_0297.JPG                 # Dining area
+│   ├── IMG_0298.JPG                 # Kitchen
+│   ├── IMG_0299.JPG                 # Garden view
+│   ├── IMG_7627.JPG                 # Additional villa photo
+│   └── PHOTO-2025-02-01-21-57-21*.jpg  # Gallery collection (24 photos)
+│
+├── 🖼️ logo with out background.png  # Villa logo
+│
+└── 📝 README.md                     # Project documentation
+
+
+KEY FEATURES:
+=============
+
+✅ OOP Architecture
+   - Class-based JavaScript
+   - Inheritance and encapsulation
+   - Single Responsibility Principle
+   - Modular and maintainable
+
+✅ BEM Methodology
+   - Block__Element--Modifier naming
+   - Scalable CSS architecture
+   - No naming conflicts
+   - Easy to understand
+
+✅ Separation of Concerns
+   - HTML: Structure
+   - CSS: Presentation
+   - JavaScript: Behavior
+
+✅ Responsive Design
+   - Mobile-first approach
+   - Flexible grid layouts
+   - Media queries
+   - Touch-friendly
+
+✅ Performance
+   - Optimized animations
+   - Lazy loading ready
+   - Minimal dependencies
+   - Clean code
+
+
+BEM NAMING EXAMPLES:
+====================
+
+Block:              .navigation
+Element:            .nav-links__item
+Modifier:           .price-card--featured
+
+Block:              .feature-card
+Element:            .feature-card__icon
+Element:            .feature-card__title
+Element:            .feature-card__description
+
+Block:              .price-card
+Element:            .price-card__list
+Element:            .price-card__list-item
+Modifier:           .price-card--featured
+
+
+COLOR SCHEME (From Logo):
+==========================
+
+Primary:        #FF6B35  (Sunset Orange)
+Secondary:      #FDB813  (Golden Yellow)
+Coral:          #FF8A80  (Coral Pink)
+Pink:           #FF9ECE  (Light Pink)
+Navy:           #003366  (Navy Blue)
+Light:          #FFF8F0  (Warm Light)
+
+
+PACKAGES:
+=========
+
+🌙 Night Out Package
+   Price: Rs. 75,000 (Flat Rate)
+   - 5 Double + 1 Family Bedroom
+   - Pool Access (Day & Night)
+   - In-House Chef
+   - BBQ Facilities
+   - Sports Activities
+
+☀️ Day Outing Package
+   Price: Rs. 5,000 (Per Head)
+   - Time: 10 AM - 5 PM
+   - Min 10 people
+   - Full F&B
+   - Pool + A/C Room
+   - Sports Activities
