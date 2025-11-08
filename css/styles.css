@@ -152,8 +152,10 @@ img {
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23FDB813;stop-opacity:1" /><stop offset="50%" style="stop-color:%23FF6B35;stop-opacity:1" /><stop offset="100%" style="stop-color:%23FF8A80;stop-opacity:1" /></linearGradient></defs><rect fill="url(%23grad1)" width="1200" height="600"/><circle fill="%23FDB813" opacity="0.3" cx="200" cy="100" r="150"/><circle fill="%23FF8A80" opacity="0.2" cx="900" cy="400" r="200"/></svg>');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Changed from fixed to scroll for mobile compatibility */
+    background-repeat: no-repeat;
     height: 100vh;
+    min-height: 600px; /* Ensure minimum height on mobile */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -846,6 +848,8 @@ img {
     .hero {
         min-height: 70vh;
         padding: 8rem 2rem 4rem;
+        background-attachment: scroll !important; /* Force scroll on tablet */
+        background-size: cover !important;
     }
 
     .hero__title {
@@ -1007,6 +1011,10 @@ img {
     .hero {
         min-height: 60vh;
         padding: 7rem 1rem 3rem;
+        background-attachment: scroll !important; /* Force scroll on mobile */
+        background-size: cover !important;
+        height: auto;
+        min-height: 500px;
     }
 
     .hero__title {
